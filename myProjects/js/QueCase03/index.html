@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Queue03</title>
+    <style>
+
+        #horse1{
+            width: 10%;
+            left: 50px;
+            top: 300px;
+            position: absolute;
+        }
+        #horse2{
+            width: 10%;
+            left: 250px;
+            top: 300px;
+            position: absolute;
+        }
+        #horse3{
+            width: 10%;
+            left: 450px;
+            top: 300px;
+            position: absolute;
+        }
+        #horse4{
+            width: 10%;
+            left: 650px;
+            top: 300px;
+            position: absolute;
+        }
+        #horse5{
+            width: 10%;
+            left: 850px;
+            top: 300px;
+            position: absolute;
+        }
+        #horse6{
+            width: 10%;
+            left: 1050px;
+            top: 300px;
+            position: absolute;
+        }
+        #birds{
+            top: 0%;
+            position: absolute;
+            right: 400px;
+            width: 25%;
+        }
+        #div1{
+            width: 150px;
+            height: 50px;
+            position: absolute;
+            right: 80%;
+            border-radius: 1px 45px 1px 45px;
+            top: 63%;
+            left: 0;
+            margin: auto;
+            background-color: #3d5b67;
+            box-shadow: 2px 2px 70px 10px #0d0d0f;
+        }
+        #div2{
+            width: 150px;
+            height: 50px;
+            position: absolute;
+            right: 55%;
+            border-radius: 1px 45px 1px 45px;
+            top: 63%;
+            left: 0;
+            margin: auto;
+            background-color:#3d5b67;
+            box-shadow: 2px 2px 70px 10px #0d0d0f;
+        }
+        #div3{
+            width: 150px;
+            height: 50px;
+            position: absolute;
+            right: 30%;
+            border-radius:  1px 45px 1px 45px;
+            top: 63%;
+            left: 0;
+            margin: auto;
+            background-color: #3d5b67;
+            box-shadow: 2px 2px 70px 10px #0d0d0f;
+        }
+        #div4{
+            width: 150px;
+            height: 50px;
+            position: absolute;
+            right: 5%;
+            border-radius:  1px 45px 1px 45px;
+            top: 63%;
+            left: 0;
+            margin: auto;
+            background-color: #3d5b67;
+            box-shadow: 2px 2px 70px 10px #0d0d0f;
+        }
+        #div5{
+            width: 150px;
+            height: 50px;
+            position: absolute;
+            right: -20%;
+            border-radius:  1px 45px 1px 45px;
+            top: 63%;
+            left: 0;
+            margin: auto;
+            background-color: #3d5b67;
+            box-shadow: 2px 2px 70px 10px #0d0d0f;
+        }
+        #div6{
+            width: 150px;
+            height: 50px;
+            position: absolute;
+            right: -45%;
+            border-radius:  1px 45px 1px 45px;
+            top: 63%;
+            left: 0;
+            margin: auto;
+            background-color: #3d5b67;
+            box-shadow: 2px 2px 70px 10px #0d0d0f;
+        }
+        #one{
+            position: absolute;
+            color: #e9e2e2;
+            text-align: center;
+            left: 55px;
+            top: 3px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        #two{
+            position: absolute;
+            color: #e9e2e2;
+            text-align: center;
+            left: 55px;
+            top: 3px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        #three{
+            position: absolute;
+            color: #e9e2e2;
+            text-align: center;
+            left: 55px;
+            top: 3px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        #four{
+            position: absolute;
+            color: #e9e2e2;
+            text-align: center;
+            left: 55px;
+            top: 3px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        #five{
+            position: absolute;
+            color: #e9e2e2;
+            text-align: center;
+            left: 55px;
+            top: 3px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        #six{
+            position: absolute;
+            color: #e9e2e2;
+            text-align: center;
+            left: 55px;
+            top: 3px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+<img id="cloud1" src="assets/images/cloud.gif" alt="cloud">
+<img id="cloud2" src="assets/images/cloud.gif" alt="cloud">
+<img id="cloud3" src="assets/images/cloud.gif" alt="cloud">
+<img id="birds" src="assets/images/birds.gif" alt="birds">
+<img id="horse1" src="assets/images/horse.gif" alt="horse">
+<img id="horse2" src="assets/images/horse.gif" alt="horse">
+<img id="horse3" src="assets/images/horse.gif" alt="horse">
+<img id="horse4" src="assets/images/horse.gif" alt="horse">
+<img id="horse5" src="assets/images/horse.gif" alt="horse">
+<img id="horse6" src="assets/images/horse.gif" alt="horse">
+
+<div id="div1"><label id="one"></label></div>
+<div id="div2"><label id="two"></label></div>
+<div id="div3"><label id="three"></label></div>
+<div id="div4"><label id="four"></label></div>
+<div id="div5"><label id="five"></label></div>
+<div id="div6"><label id="six"></label></div>
+
+<script src="assets/jquery/jQuery/jquery-3.6.0.min.js"></script>
+<script>
+    const horse = ["A", "B", "C","D","E","F"];
+
+    setInterval(ride, 2000)
+
+    function ride() {
+        var i=0;
+        var top = horse[i];
+
+        while (i < horse.length) {
+
+            if (i == 5) {
+                horse[i] = top;
+
+            } else {
+                horse[i] = horse[i + 1];
+            }
+            i++;
+        }
+        var count = 0;
+        $('#one').text(horse[count++]);
+        $('#two').text(horse[count++]);
+        $('#three').text(horse[count++]);
+        $('#four').text(horse[count++]);
+        $('#five').text(horse[count++]);
+        $('#six').text(horse[count++]);
+    }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assigment_(01.01)</title>
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <style>
+
+        /*main section*/
+        body > section {
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+
+        }
+
+        /*red box*/
+        body > section:nth-child(1) {
+            background-color: red;
+            left: 0;
+            top: 0;
+        }
+
+        /*green box*/
+        body > section:nth-child(2) {
+            background-color: green;
+            right: 0;
+            top: 0;
+
+        }
+
+        /*orange box*/
+        body > section:nth-child(3) {
+            background-color: orange;
+            left: 0;
+            bottom: 0;
+        }
+
+        /*pink box*/
+        body > section:nth-child(4) {
+            background-color: deeppink;
+            right: 0;
+            bottom: 0;
+        }
+
+        /*half circle*/
+        body > div {
+            background: white;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            z-index: 2;
+
+        }
+
+        /*top-left circle*/
+        body > div:nth-child(5) {
+            top: 0;
+            left: 0;
+            /* border-radius: 25px; */
+            /* border-top-left-radius: 136px; */
+            /* border-top-right-radius: 84px; */
+            /* border-bottom-left-radius: 100px; */
+            border-bottom-right-radius: 100%;
+
+        }
+
+        /*top right circle*/
+        body > div:nth-child(6) {
+            right: 0;
+            top: 0;
+            border-bottom-left-radius: 100%;
+        }
+
+
+        /*botom left circle*/
+        body > div:nth-child(7) {
+            left: 0;
+            bottom: 0;
+            border-top-right-radius: 100%;
+        }
+
+        /*bottom right circle*/
+        body > div:nth-child(8) {
+            right: 0;
+            bottom: 0;
+            border-top-left-radius: 100%;
+        }
+
+        /*center box*/
+        body > div:nth-child(9) {
+            right: 0;
+            bottom: 0;
+            left: 0;
+            top: 0;
+            margin: auto;
+            transform: rotate(135deg);
+        }
+
+        /*center circle*/
+        div > div {
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+            border-radius: 100px;
+            background-color: red;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        /*top half circle*/
+        body > div:nth-child(10) {
+            left: 0;
+            right: 0;
+            top: 0;
+            margin: auto;
+            width: 200px;
+            height: 100px;
+            border-bottom-left-radius: 150px;
+            border-bottom-right-radius: 150px;
+        }
+
+        /*bottom half circle*/
+        body > div:nth-child(11) {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 200px;
+            height: 100px;
+            border-top-left-radius: 150px;
+            border-top-right-radius: 150px;
+        }
+        /*in box circle*/
+        section>div{
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            border-radius: 100%;
+        }
+        /*in red circle*/
+        section>div>div{
+            width: 50px;
+            height: 50px;
+            border-radius: 0%;
+
+
+        }
+    </style>
+</head>
+<body>
+<!--red box-->
+<section>
+<!--    circle-->
+    <div>
+<!--        red box-->
+        <div></div>
+    </div>
+</section>
+<!--green box-->
+<section>
+    <!--    circle-->
+    <div>
+        <!--        red box-->
+        <div></div>
+    </div>
+</section>
+<!--pink box-->
+<section>
+    <!--    circle-->
+    <div>
+        <!--        red box-->
+        <div></div>
+    </div>
+</section>
+<!--orange box-->
+<section>
+    <!--    circle-->
+    <div>
+        <!--        red box-->
+        <div></div>
+    </div>
+</section>
+<!--half circle-->
+<div></div>
+<!--half circle-->
+<div></div>
+<!--half circle-->
+<div></div>
+<!--half circle-->
+<div></div>
+
+<!--center circle-->
+<div>
+    <div></div>
+</div>
+
+<!--top center & bottom circle-->
+<div></div>
+<!--bottom center & bottom circle-->
+<div></div>
+
+</body>
+</html>

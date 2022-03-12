@@ -1,0 +1,43 @@
+#divSection{
+    position: relative;
+}
+#boxSection{
+    position: relative;
+
+}
+.div{
+    margin: auto;
+    width: 150px;
+    height: 100px;
+    position: relative;
+    background: black;
+    display: inline-block;
+}
+#div1{
+    left: 10px;
+    top: 0;
+    background-color: blue;
+
+}
+#div2{
+    top: 0;
+    left: 200px;
+    background-color: red;
+
+}
+#div3{
+    left: 250px;
+    background-color: yellow;
+}
+#div4{
+    left: 300px;
+    background-color: green;
+}
+#div5{
+    left: 350px;
+    background-color: antiquewhite;
+}
+#div6{
+    left: 1000px;
+    background-color: purple;
+}

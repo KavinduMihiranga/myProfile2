@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <title>More Skill</title>
+
+    <style>
+         #skillHeading {
+            width: 100%;
+            height: 8%;
+            background-color: aqua;
+            position: relative;
+            font-size: xxx-large;
+            box-shadow: 10px 14px 12px 1px #02181f;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            text-align: center;
+        
+        }
+        div.gallery{
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 200px;
+            top: 50px;
+            position: relative;
+
+        }
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+        @media all and (min-width: 320px)and (max-width: 425px){
+            div.gallery{
+                width: 280px;
+            }
+            div.gallery img {
+                width: 100%;
+                height: auto;
+            }
+        }
+         @media all and (min-width: 425px)and (max-width: 768px){
+             div.gallery{
+                 width: 395px;
+             }
+             div.gallery img {
+                 width: 100%;
+                 height: auto;
+             }
+        }
+         @media all and (min-width: 768px)and (max-width: 1024px){
+             div.gallery{
+                 width: 238px;
+             }
+             div.gallery img {
+                 width: 100%;
+                 height: auto;
+             }
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="skillHeading">Skill</div>
+
+    <div class="gallery">
+        <a href="assets/images/html.png" target="blank">
+            <img alt="html icon" id="htmlImg" src="assets/images/html.png">
+        </a>
+        <div class="desc">JAVA</div>
+    </div>
+    
+    <div class="gallery">
+        <a href="assets/images/java.png" target="blank">
+            <img alt="java icon" id="javaImage" src="assets/images/java.png">
+        </a>
+        <div class="desc">JAVA</div>
+    </div>
+    
+    <div class="gallery">
+        <a href="assets/images/mysql.png" target="blank">
+            <img alt="mysql icon" id="mySqlImg" src="assets/images/mysql.png">
+        </a>
+        <div class="desc">mysql</div>
+    </div>
+    
+    <div class="gallery">
+        <a href="assets/images/js.png" target="blank">
+            <img alt="java icon" id="jsImg" src="assets/images/js.png">
+        </a>
+        <div class="desc">js</div>
+    </div>
+    
+    
+    <div class="gallery">
+        <a href="assets/images/css.png" target="blank">
+            <img alt="css icon" id="cssImg" src="assets/images/css.png">
+        </a>
+        <div class="desc">css</div>
+    </div>
+    
+    <div class="gallery">
+        <a href="assets/images/photoshop.png" target="blank">
+            <img alt="java icon" id="photoshopImg" src="assets/images/photoshop.png">
+        </a>
+        <div class="desc">photoshop</div>
+    </div>
+    
+    <div class="gallery">
+        <a href="assets/images/ilustraterr.png" target="blank">
+            <img alt="ilustrater icon" id="ilustraterrImg" src="assets/images/ilustraterr.png">
+        </a>
+        <div class="desc">ilustrater</div>
+    
+    </div>
+
+</body>
+</html>

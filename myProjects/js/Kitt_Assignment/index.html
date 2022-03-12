@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Kitt</title>
+    <style>
+        #divContainer{
+            width: 750px;
+            height: 150px;
+        }
+        div{
+            position: relative;
+        }
+        #div1{
+            background-color: red;
+            box-shadow: 2px 2px 70px 5px white;
+        }
+        #div2{
+            background-color: red;
+            box-shadow: 2px 2px 70px 5px white;
+        }
+        #div3{
+            background-color: red;
+            box-shadow: 2px 2px 70px 5px white;
+        }
+        #div4{
+            background-color: red;
+            box-shadow: 2px 2px 70px 5px white;
+        }
+        #div4{
+            background-color: red;
+            box-shadow: 2px 2px 70px 5px white;
+        }
+        #div5{
+            background-color: red;
+            box-shadow: 2px 2px 70px 5px white;
+        }
+        #div6{
+            background-color: red;
+            box-shadow: 2px 2px 70px 5px white;
+        }
+    </style>
+
+</head>
+<body>
+<section class="container mt-5">
+    <div class="container ">
+        <div id="divContainer" class="row ">
+            <div id="div1" class="col" ></div>
+            <div id="div2" class="col" ></div>
+            <div id="div3" class="col" ></div>
+            <div id="div4" class="col" ></div>
+            <div id="div5" class="col" ></div>
+            <div id="div6" class="col" ></div>
+        </div>
+    </div>
+    <button data-bs-target="#" type="button" class="bg-info , w-25 ,mx-5"  id="btnStart"> Start</button>
+    <button data-bs-target="#" type="button" class="bg-danger , w-25 ,mx-5"  id="btnStop"> Stop</button>
+</section>
+
+
+    <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+
+        var div1=$('#div1');
+        var div2=$('#div2');
+        var div3=$('#div3');
+        var div4=$('#div4');
+        var div5=$('#div5');
+        var div6=$('#div6');
+
+        var tId = setInterval(start,120);
+
+        function col1(div){
+            div.css('box-shadow: ',"#6D6D6D");
+        }
+        function col2(div){
+            div.css('backgroundColor',"#f19f9f");
+        }
+        function col3(div){
+            div.css('backgroundColor','#fc6565')
+        }
+
+        var movement=0;
+        function start() {
+            if(movement==0){
+                div1.css('opacity','100%')
+                div2.css('opacity','100%')
+                div3.css('opacity','100%')
+                div4.css('opacity','50%')
+                div5.css('opacity','50%')
+                div6.css('opacity','50%')
+
+                col2(div2);
+                col3(div2);
+                movement++;
+            }else if (movement==1){
+                div1.css('opacity','100%')
+                div2.css('opacity','100%')
+                div3.css('opacity','100%')
+                div4.css('opacity','100%')
+                div5.css('opacity','50%')
+                div6.css('opacity','50%')
+
+                col1(div1);
+                col2(div2);
+                col3(div2);
+                movement++;
+            }else if (movement==2){
+                div1.css('opacity','50%')
+                div2.css('opacity','100%')
+                div3.css('opacity','100%')
+                div4.css('opacity','100%')
+                div5.css('opacity','100%')
+                div6.css('opacity','50%')
+
+                col1(div2);
+                col2(div3);
+                col3(div4);
+                movement++;
+            }else if (movement==3){
+                div1.css('opacity','50%')
+                div2.css('opacity','50%')
+                div3.css('opacity','100%')
+                div4.css('opacity','100%')
+                div5.css('opacity','100%')
+                div6.css('opacity','100%')
+
+                col1(div2);
+                col2(div3);
+                col3(div4);
+                movement++;
+            }else if(movement==4){
+                div1.css('opacity','50%')
+                div2.css('opacity','50%')
+                div3.css('opacity','50%')
+                div4.css('opacity','100%')
+                div5.css('opacity','100%')
+                div6.css('opacity','100%')
+
+                col1(div3);
+                col2(div4);
+                col3(div5);
+                movement++;
+            }else if (movement==5){
+                div1.css('opacity','50%')
+                div2.css('opacity','50%')
+                div3.css('opacity','100%')
+                div4.css('opacity','100%')
+                div5.css('opacity','100%')
+                div6.css('opacity','100%')
+
+                col1(div4);
+                col2(div5);
+                col3(div6);
+                movement++;
+            }else if (movement==6){
+                div1.css('opacity','50%')
+                div2.css('opacity','100%')
+                div3.css('opacity','100%')
+                div4.css('opacity','100%')
+                div5.css('opacity','100%')
+                div6.css('opacity','50%')
+
+                col1(div4);
+                col2(div3);
+                col3(div2);
+                movement++;
+            }else if (movement==7){
+                div1.css('opacity','100%')
+                div2.css('opacity','100%')
+                div3.css('opacity','100%')
+                div4.css('opacity','50%')
+                div5.css('opacity','50%')
+                div6.css('opacity','50%')
+
+                col1(div3);
+                col2(div2);
+                col3(div1);
+                movement=0;
+            }
+        }
+
+        $('#btnStart').click(function () {
+                movement=0;
+        })
+        $('#btnStop').click(function () {
+                movement=8;
+        })
+
+        // $(document).ready(function () {
+        //     $("#btnStart").click(function() {
+        //         var divx=$('#div1');
+        //         if (divx.backgroundColor = "purple") {
+        //
+        //             $("#div1").animate({left: "+=200"},200);
+        //             $("#div2").animate({left: "+=200"},200);
+        //             $("#div3").animate({left: "+=200"},200);
+        //             $("#div4").animate({left: "+=200"},200);
+        //             $("#div5").animate({left: "+=200"},200);
+        //             $("#div6").animate({left: "-=550"},200);
+        //
+        //         }
+        //
+        //         // setInterval(callMe,1000)
+        //
+        //     })
+        //
+        // });
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,1653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <!-- https://kavindumihiranga.github.io/Profile/ -->
+    <style>
+        .logo {
+            width: 25%;
+            position: relative;
+            top: 10px;
+            box-shadow: 10px 14px 12px 1px #02181f;
+        }
+
+        .navigation {
+            list-style: none;
+            display: inline-block;
+            background-color: white;
+            box-shadow: 10px 14px 12px 1px #02181f;
+            left: 20%;
+        }
+
+        .navigationList {
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            cursor: pointer;
+            position: relative;
+            display: inline;
+            margin-right: 25px;
+            font-size: 30px;
+            right: 0;
+            top: 0;
+        }
+
+        .backgroundImg {
+            width: 100%;
+        }
+
+        .homePaige {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .hello {
+            position: absolute;
+            top: 10%;
+            left: 20%;
+            font-size: 500%;
+        }
+
+        .programmer {
+            position: absolute;
+            top: 22%;
+            left: 30%;
+            font-size: 200%;
+
+        }
+
+        .status {
+            position: absolute;
+            top: 25%;
+            left: 10%;
+            font-size: 180%;
+            width: 25%;
+        }
+
+        #fbIcon {
+            position: absolute;
+            top: 12%;
+            left: 2%;
+            width: 5%;
+
+        }
+
+        #whIcon {
+            position: absolute;
+            top: 25%;
+            left: 2%;
+            width: 5%;
+
+        }
+
+        #emIcon {
+            position: absolute;
+            top: 38%;
+            left: 2%;
+            width: 5%;
+
+        }
+
+        #liIcon {
+            position: absolute;
+            top: 50%;
+            left: 2%;
+            width: 5%;
+
+        }
+
+        #inIcon {
+            position: absolute;
+            top: 62%;
+            left: 2%;
+            width: 5%;
+
+        }
+
+        #heading {
+            position: relative;
+        }
+
+
+        #aboutheading {
+            width: 100%;
+            height: 8%;
+            background-color: aqua;
+            position: relative;
+            font-size: xxx-large;
+            box-shadow: 10px 14px 12px 1px #02181f;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            text-align: center;
+
+            animation-name: aboutHeadingAnimation;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+
+        }
+
+        @keyframes aboutHeadingAnimation {
+            0% {
+                background-color: #cddbe0;
+            }
+            10% {
+                background-color: #c3d6c5;
+
+            }
+            20% {
+                background-color: #d4c0d6;
+
+            }
+            30% {
+                background-color: #ddd9c7;
+
+            }
+            40% {
+                background-color: #c1d6d3;
+
+            }
+            50% {
+                background-color: #dddccb;
+
+            }
+            60% {
+                background-color: #dac6c6;
+
+            }
+            70% {
+                background-color: #d1d4e4;
+
+            }
+            80% {
+                background-color: #dfcdd5;
+
+            }
+            90% {
+                background-color: #d1e0d5;
+
+            }
+            100% {
+                background-color: #e4dcd3;
+            }
+        }
+
+
+        #article {
+            top: 250%;
+            position: absolute;
+        }
+
+        .no {
+            text-decoration: none;
+        }
+
+        #profilePic {
+            width: 50%;
+            position: absolute;
+            top: 100%;
+            right: 0%;
+        }
+
+        #aboutPre {
+            top: 150%;
+            font-size: xx-large;
+            position: absolute;
+        }
+
+        #skill {
+            position: relative;
+        }
+
+        #skillHeading {
+            width: 100%;
+            height: 8%;
+            background-color: aqua;
+            position: relative;
+            font-size: xxx-large;
+            box-shadow: 10px 14px 12px 1px #02181f;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            text-align: center;
+            top: 700px;
+
+
+            animation-name: skillHeadingAnimation;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+        }
+
+        @keyframes skillHeadingAnimation {
+            0% {
+                background-color: #cddbe0;
+            }
+            10% {
+                background-color: #c3d6c5;
+
+            }
+            20% {
+                background-color: #d4c0d6;
+
+            }
+            30% {
+                background-color: #ddd9c7;
+
+            }
+            40% {
+                background-color: #c1d6d3;
+
+            }
+            50% {
+                background-color: #dddccb;
+
+            }
+            60% {
+                background-color: #dac6c6;
+
+            }
+            70% {
+                background-color: #d1d4e4;
+
+            }
+            80% {
+                background-color: #dfcdd5;
+
+            }
+            90% {
+                background-color: #d1e0d5;
+
+            }
+            100% {
+                background-color: #e4dcd3;
+            }
+        }
+
+
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 200px;
+            top: 800px;
+            position: relative;
+
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .skillMore {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            width: 25px;
+            height: 25px;
+        }
+
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+            width: 250px;
+            height: 50px;
+            position: relative;
+            top: 900px;
+            right: 450px;
+        }
+
+        .button1:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .projectHeading {
+            width: 100%;
+            height: 8%;
+            background-color: aqua;
+            position: relative;
+            font-size: xxx-large;
+            box-shadow: 10px 14px 12px 1px #02181f;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            text-align: center;
+            top: 950px;
+
+            animation-name: projectHeadingAnimation;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+        }
+
+
+        @keyframes projectHeadingAnimation {
+            0% {
+                background-color: #cddbe0;
+            }
+            10% {
+                background-color: #c3d6c5;
+
+            }
+            20% {
+                background-color: #d4c0d6;
+
+            }
+            30% {
+                background-color: #ddd9c7;
+
+            }
+            40% {
+                background-color: #c1d6d3;
+
+            }
+            50% {
+                background-color: #dddccb;
+
+            }
+            60% {
+                background-color: #dac6c6;
+
+            }
+            70% {
+                background-color: #d1d4e4;
+
+            }
+            80% {
+                background-color: #dfcdd5;
+
+            }
+            90% {
+                background-color: #d1e0d5;
+
+            }
+            100% {
+                background-color: #e4dcd3;
+            }
+        }
+
+
+        div.galleryProject {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 230px;
+            top: 1000px;
+            position: relative;
+
+        }
+
+        div.galleryProject:hover {
+            border: 1px solid #777;
+        }
+
+        div.galleryProject img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc2 {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .button2 {
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+            width: 250px;
+            height: 50px;
+            position: relative;
+            top: 1100px;
+            left: 650px;
+        }
+
+        .button2:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .educationHeadline {
+            width: 100%;
+            height: 8%;
+            background-color: aqua;
+            position: relative;
+            font-size: xxx-large;
+            box-shadow: 10px 14px 12px 1px #02181f;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            text-align: center;
+            top: 1200px;
+
+            animation-name: educationHeadingAnimation;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+
+        }
+
+        @keyframes educationHeadingAnimation {
+            0% {
+                background-color: #cddbe0;
+            }
+            10% {
+                background-color: #c3d6c5;
+
+            }
+            20% {
+                background-color: #d4c0d6;
+
+            }
+            30% {
+                background-color: #ddd9c7;
+
+            }
+            40% {
+                background-color: #c1d6d3;
+
+            }
+            50% {
+                background-color: #dddccb;
+
+            }
+            60% {
+                background-color: #dac6c6;
+
+            }
+            70% {
+                background-color: #d1d4e4;
+
+            }
+            80% {
+                background-color: #dfcdd5;
+
+            }
+            90% {
+                background-color: #d1e0d5;
+
+            }
+            100% {
+                background-color: #e4dcd3;
+            }
+        }
+
+
+        .ijseDiv {
+            width: 100%;
+            top: 390%;
+            position: absolute;
+        }
+
+        .ijseImg {
+            width: 30%;
+        }
+
+        .ijsePre {
+            left: 40%;
+            font-size: 30px;
+            top: 15%;
+            position: absolute;
+        }
+
+        .schoolDiv {
+            width: 100%;
+            top: 420%;
+            position: absolute;
+        }
+
+        .schoolImg {
+            width: 30%;
+        }
+
+        .schoolPre {
+            left: 30%;
+            font-size: 25px;
+            top: 15%;
+            position: absolute;
+        }
+
+        .ContactHeading {
+            width: 100%;
+            height: 8%;
+            background-color: aqua;
+            position: relative;
+            font-size: xxx-large;
+            box-shadow: 10px 14px 12px 1px #02181f;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            text-align: center;
+            top: 1850px;
+
+            animation-name: contactHeadingAnimation;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+        }
+
+
+        @keyframes contactHeadingAnimation {
+            0% {
+                background-color: #cddbe0;
+            }
+            10% {
+                background-color: #c3d6c5;
+
+            }
+            20% {
+                background-color: #d4c0d6;
+
+            }
+            30% {
+                background-color: #ddd9c7;
+
+            }
+            40% {
+                background-color: #c1d6d3;
+
+            }
+            50% {
+                background-color: #dddccb;
+
+            }
+            60% {
+                background-color: #dac6c6;
+
+            }
+            70% {
+                background-color: #d1d4e4;
+
+            }
+            80% {
+                background-color: #dfcdd5;
+
+            }
+            90% {
+                background-color: #d1e0d5;
+
+            }
+            100% {
+                background-color: #e4dcd3;
+            }
+        }
+
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #3ba6cd;
+            border-radius: 4px;
+            resize: vertical;
+            box-sizing: border-box;
+
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            background-color: #53bb97;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+            box-sizing: border-box;
+        }
+
+        input[type=submit]:hover {
+            background-color: #487b4a;
+            box-sizing: border-box;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #b0dae5;
+            padding: 20px;
+            box-sizing: border-box;
+            position: absolute;
+            top: 3500px;
+            left: 10%;
+            width: 50%;
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+            box-sizing: border-box;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+            box-sizing: border-box;
+        }
+
+
+        .contactDetail {
+            width: 20px;
+            position: relative;
+            top: 50px;
+            left: 80%;
+
+        }
+
+        .phoneDiv {
+            width: 20px;
+            position: relative;
+            top: 1375px;
+        }
+
+        .callImg {
+            width: 80px;
+            position: relative;
+            top: 500px;
+        }
+
+        .no {
+            width: 20px;
+            position: relative;
+            top: 5px;
+            left: 0px;
+            font-size: xx-large;
+            color: blue;
+
+        }
+
+        .phone {
+            font-size: xx-large;
+            top: 450px;
+            position: relative;
+            left: 10px;
+        }
+
+        .phoneNo {
+            font-size: xx-large;
+            top: 420px;
+            position: relative;
+        }
+
+
+        .placeDetail {
+            width: 20px;
+            position: relative;
+            top: 50px;
+            left: 80%;
+
+        }
+
+        .placeDiv {
+            width: 20px;
+            position: relative;
+            top: 1375px;
+        }
+
+        .placeImg {
+            width: 50px;
+            position: relative;
+            top: 500px;
+        }
+
+        .location {
+            font-size: xx-large;
+            top: 500px;
+            position: relative;
+        }
+
+
+        .emaleDetail {
+            width: 20px;
+            position: relative;
+            top: 80px;
+            left: 80%;
+
+        }
+
+        .emailDiv {
+            width: 20px;
+            position: relative;
+            top: 1875px;
+        }
+
+        .emailsImg {
+            width: 50px;
+            position: relative;
+            top: 50px;
+        }
+
+        .email {
+            font-size: xx-large;
+            top: 20px;
+            position: relative;
+        }
+
+        .emailAddress {
+            width: 20%;
+            position: absolute;
+            /* top: 10px; */
+            right: 150px;
+            font-size: xx-large;
+            color: blue;
+        }
+
+        .footer {
+            width: 100%;
+            height: 50px;
+            position: relative;
+            top: 2200px;
+            background-color: #777;
+            text-align: center;
+
+        }
+
+        .footerP {
+            font-size: large;
+
+        }
+
+
+        @media all and (min-width: 320px)and (max-width: 425px) {
+            .logo {
+                width: 80%;
+                left: 0;
+                right: 0;
+                margin: auto;
+                position: absolute;
+                padding: 0;
+            }
+
+            .navigation {
+                font-size: 25px;
+                display: table-caption;
+                top: 28px;
+                position: relative;
+            }
+
+            #profilePic {
+                width: 40%;
+                top: 150%;
+            }
+
+            #aboutPre {
+                font-size: xx-small;
+            }
+
+            .hello {
+                font-size: 100%;
+            }
+
+            .programmer {
+                font-size: 12px;
+                left: 35%;
+                top: 20%;
+            }
+
+            .status {
+                font-size: 8px;
+                top: 28%;
+                left: 0%;
+
+            }
+
+            #skillHeading {
+                top: 200px;
+            }
+
+            div.gallery {
+                top: 230px;
+                left: 20%;
+            }
+
+            .button1 {
+                top: 290px;
+                left: 25px;
+            }
+
+            .projectHeading {
+                top: 350px;
+            }
+
+            div.galleryProject {
+                top: 400px;
+                left: 15px;
+
+            }
+
+            .button2 {
+                top: 415px;
+                left: 25px;
+            }
+
+            .educationHeadline {
+                top: 440px;
+                left: 0px;
+            }
+
+            .ijseDiv {
+                top: 720%;
+                height: 100px;
+
+            }
+
+            .ijseImg {
+                width: 30%;
+                left: 34%;
+                position: absolute;
+            }
+
+            .ijsePre {
+                left: 2%;
+                font-size: 12px;
+                top: 15%;
+                position: absolute;
+            }
+
+            .schoolDiv {
+                top: 730%;
+                height: 100px;
+
+            }
+
+            .schoolImg {
+                width: 30%;
+                left: 34%;
+                position: absolute;
+            }
+
+            .schoolPre {
+                left: 4%;
+                font-size: 7px;
+                top: 60%;
+                position: absolute;
+            }
+
+            .ContactHeading {
+                top: 705px;
+            }
+
+
+            .container {
+                top: 4500px;
+                left: 1%;
+                width: 99%;
+            }
+
+            .phoneDiv {
+                right: 175px;
+                top: 630px;
+            }
+
+            #article {
+                top: 145%;
+                position: absolute;
+                right: 105%;
+            }
+
+            .no {
+
+                font-size: large;
+
+            }
+
+            .placeDiv {
+                top: 610px;
+            }
+
+            .placeDetail {
+                left: 22%;
+            }
+
+            .emaleDetail {
+                top: 80px;
+                left: 70px;
+            }
+
+            .emailDiv {
+                top: 1040px;
+            }
+
+            .emailsImg {
+                top: 50px;
+                left: 20px;
+            }
+
+            .emailAddress {
+                font-size: large;
+                right: 44px;
+            }
+
+            .footer {
+                top: 1275px;
+            }
+
+        }
+
+        @media all and (min-width: 425px)and (max-width: 768px) {
+            .logo {
+                width: 80%;
+                left: 12%;
+                right: 0;
+                margin: auto;
+                position: relative;
+                padding: 0;
+            }
+
+            .navigation {
+                font-size: 20px;
+                display: table-caption;
+                position: relative;
+            }
+
+            #profilePic {
+                width: 40%;
+                top: 150%;
+            }
+
+            #aboutPre {
+                font-size: xx-small;
+            }
+
+            .hello {
+                font-size: 100%;
+            }
+
+            .programmer {
+
+                font-size: 15px;
+                top: 18%;
+                left: 32%;
+
+            }
+
+            .status {
+                font-size: 60%;
+                left: 5%;
+                top: 22%;
+            }
+
+            #skillHeading {
+                top: 200px;
+            }
+
+            div.gallery {
+                top: 230px;
+                left: 25%;
+            }
+
+            .button1 {
+                top: 330px;
+                left: 80px;
+            }
+
+            .projectHeading {
+                top: 450px;
+            }
+
+            div.galleryProject {
+                top: 500px;
+                left: 80px;
+            }
+
+            .button2 {
+                top: 560px;
+                left: 80px;
+            }
+
+            .educationHeadline {
+                top: 600px;
+                left: 0px;
+            }
+
+            .ijseDiv {
+                top: 760%;
+                height: 100px;
+                position: absolute;
+            }
+
+            .ijseImg {
+                width: 30%;
+                left: 30%;
+                position: absolute;
+            }
+
+            .ijsePre {
+                left: 4%;
+                font-size: 16px;
+            }
+
+            .schoolDiv {
+                top: 770%;
+                height: 100px;
+
+            }
+
+            .schoolImg {
+                width: 30%;
+                left: 34%;
+                position: absolute;
+            }
+
+            .schoolPre {
+                left: 4%;
+                font-size: 10px;
+                top: 89%;
+                position: absolute;
+            }
+
+            .ContactHeading {
+                top: 860px;
+            }
+
+
+            .container {
+                top: 4755px;
+                left: 10%;
+                width: 85%;
+            }
+
+            .phoneDiv {
+                right: 268px;
+                top: 780px;
+            }
+
+            .contactDetail {
+                left: 80%;
+            }
+
+            .placeDetail {
+                left: 15%;
+            }
+
+            .placeDiv {
+                top: 770px;
+            }
+
+            .emaleDetail {
+                left: 36%;
+            }
+
+            .emailDiv {
+                top: 1195px;
+            }
+
+            .emailsImg {
+                right: 66px;
+            }
+
+            .email {
+                right: 65px;
+            }
+
+            .footer {
+                top: 1400px;
+            }
+
+            #article {
+                top: 180%;
+            }
+
+            .no {
+                font-size: large;
+            }
+        }
+
+        @media all and (min-width: 768px)and (max-width: 1024px) {
+            .logo {
+                width: 50%;
+                left: 22%;
+                right: 0;
+                margin: auto;
+                position: relative;
+                padding: 0;
+            }
+
+            .navigation {
+                font-size: 36px;
+                position: relative;
+                left: 5%;
+            }
+
+            #profilePic {
+                width: 50%;
+            }
+
+            #aboutPre {
+                font-size: large;
+            }
+
+            .hello {
+                font-size: 100%;
+            }
+
+            .programmer {
+
+                font-size: 80%;
+                left: 23%;
+
+            }
+
+            .status {
+                font-size: 100%;
+                top: 25%;
+            }
+
+            #skillHeading {
+                top: 400px;
+            }
+
+            div.gallery {
+                top: 450px;
+                left: 8%;
+            }
+
+            .button1 {
+                top: 540px;
+                left: 230px;
+            }
+
+            .projectHeading {
+                top: 650px;
+            }
+
+            div.galleryProject {
+                top: 680px;
+                left: 5px;
+            }
+
+            .button2 {
+                top: 960px;
+                left: -250px;
+            }
+
+            .educationHeadline {
+                top: 1000px;
+                left: 0px;
+            }
+
+            .ijseDiv {
+                width: 100%;
+                top: 555%;
+                position: absolute;
+                height: 100px;
+            }
+
+            .ijseImg {
+                width: 30%;
+            }
+
+            .ijsePre {
+                left: 5%;
+                font-size: 27px;
+                top: 40%;
+                position: absolute;
+            }
+
+            .schoolDiv {
+                top: 575%;
+                height: 100px;
+
+            }
+
+            .schoolImg {
+                width: 30%;
+                left: 34%;
+                position: absolute;
+            }
+
+            .schoolPre {
+                left: 4%;
+                font-size: 18px;
+                top: 170%;
+                position: absolute;
+            }
+
+            .ContactHeading {
+                top: 1500px;
+            }
+
+
+            .container {
+                top: 3770px;
+                left: 10%;
+                width: 80%;
+            }
+
+            .contactDetail {
+                left: 84%;
+            }
+
+            .phoneDiv {
+                right: 520px;
+                top: 1390px;
+            }
+
+            .placeDiv {
+                top: 1340px;
+            }
+
+            .emailDiv {
+                top: 1760px;
+            }
+
+            .emaleDetail {
+                left: 25%;
+            }
+
+            .footer {
+                top: 1920px;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+<img alt="logo" class="logo" src="assets/images/logo2.png">
+<ul class="navigation">
+    <button class="navigationList" id="home">Home</button>
+    <button class="navigationList" id="about">About</button>
+    <button class="navigationList" id="skill">Skill</button>
+    <button class="navigationList" id="project">Project</button>
+    <button class="navigationList" id="education">Education</button>
+    <button class="navigationList" id="contact">Contact</button>
+</ul>
+
+<div class="homePaige">
+    <img alt="image" class="backgroundImg" id="backgroundImg" src="assets/images/background_home.jpeg">
+    <div class="hello">
+        Hello '
+        I'm Kavindu Mihiranga
+    </div>
+    <div class="programmer">
+        Programmer,Designer & Developer
+    </div>
+    <div class="status">
+    <pre id="disc">
+        I am Kavindu Mihiranga In SriLanka. 
+        I am currently Learning about Software development In<abbr
+            title="Institute of Software Engineering (Panadura)">IJSE</abbr>.
+        I currently compleatingsecond semester.
+        I also have knowledge of Java,Web development,
+        UI/UX developing,database Management,hibernate and framework.
+    </pre>
+    </div>
+    <img alt="facebook icon" class="fwicon" id="fbIcon" src="assets/images/facebook.png">
+    <!-- image -->
+    <img alt="whatsupp icon" class="fwicon" id="whIcon" src="assets/images/whatsapp.png">
+    <!-- image -->
+    <img alt="email icon" class="fwicon" id="emIcon" src="assets/images/gmail.png">
+    <!-- image -->
+    <img alt="linkedin icon" class="fwicon" id="liIcon" src="assets/images/linkedin.png">
+    <!-- image -->
+    <img alt="instergram icon" class="fwicon" id="inIcon" src="assets/images/instergram.png">
+
+</div>
+<section id="aboutSectionContainer">
+<div id="heading">
+    <div id="aboutheading"> About</div>
+    <article id="article">
+        <pre id="aboutPre">
+        Name      : B.A. Kavindu Mihiranga Dias
+        Address   : Polwatta,
+                    Kekulandala,
+                    Agalawatta.
+        Birthday  : <time datetime="1999-03-09">1999-03-09</time>
+        School    : Mihindu Central College
+        Phone No  : <a 0783688031 class="no" href="tell:+94783688031"><abbr
+                title="Click to Call">+94765453914</abbr></a>
+        Phone No  : <a 0765453914 class="no" href="tell:+94765453914"><abbr
+                title="Click to Call">+94765453914</abbr></a>
+            <a class="no" download="assets/CV" href="assets/CV" id="cv">Download CV</a>
+        </pre>
+    </article>
+    <img alt="profile picture" id="profilePic" src="assets/images/prf.png">
+
+</div>
+</section>
+
+<section id="skillSectionContainer">
+<div id="skillDiv"></div>
+<div id="skillHeading">Skill</div>
+
+<div class="gallery">
+    <a href="assets/images/html.png" target="blank">
+        <img alt="html icon" id="htmlImg" src="assets/images/html.png">
+    </a>
+    <div class="desc">JAVA</div>
+</div>
+
+<div class="gallery">
+    <a href="assets/images/java.png" target="blank">
+        <img alt="java icon" id="javaImage" src="assets/images/java.png">
+    </a>
+    <div class="desc">JAVA</div>
+</div>
+
+<div class="gallery">
+    <a href="assets/images/mysql.png" target="blank">
+        <img alt="mysql icon" id="mySqlImg" src="assets/images/mysql.png">
+    </a>
+    <div class="desc">mysql</div>
+</div>
+
+<div class="gallery">
+    <a href="assets/images/js.png" target="blank">
+        <img alt="java icon" id="jsImg" src="assets/images/js.png">
+    </a>
+    <div class="desc">js</div>
+</div>
+
+
+<div class="gallery">
+    <a href="assets/images/css.png" target="blank">
+        <img alt="css icon" id="cssImg" src="assets/images/css.png">
+    </a>
+    <div class="desc">css</div>
+</div>
+
+<div class="gallery">
+    <a href="assets/images/photoshop.png" target="blank">
+        <img alt="java icon" id="photoshopImg" src="assets/images/photoshop.png">
+    </a>
+    <div class="desc">photoshop</div>
+</div>
+
+<div class="gallery">
+    <a href="assets/images/ilustraterr.png" target="blank">
+        <img alt="ilustrater icon" id="ilustraterrImg" src="assets/images/ilustraterr.png">
+    </a>
+    <div class="desc">ilustrater</div>
+
+</div>
+<button class="skillMore button1" id="skillMorebtn">See More</button>
+</section>
+
+<section id="projectSectionContainer">
+<div class="projectHeading">Project</div>
+
+
+<!--<div class="galleryProject">-->
+<!--    <a href="assets/images/LCase1.png" target="blank">-->
+<!--        <img alt="html icon" id="LCase1Img" src="assets/images/LCase1.png">-->
+<!--    </a>-->
+<!--    <div class="desc2">Layouts Case1</div>-->
+<!--</div>-->
+
+<!--<div class="galleryProject">-->
+<!--    <a href="assets/images/LCase2.png" target="blank">-->
+<!--        <img alt="LCase2 icon" id="LCase2Img" src="assets/images/LCase2.png">-->
+<!--    </a>-->
+<!--    <div class="desc2">Layouts Case2</div>-->
+<!--</div>-->
+
+<!--<div class="galleryProject">-->
+<!--    <a href="assets/images/LCase3.png" target="blank">-->
+<!--        <img alt="LCase3 icon" id="LCase3Img" src="assets/images/LCase3.png">-->
+<!--    </a>-->
+<!--    <div class="desc2">Layouts Case3</div>-->
+<!--</div>-->
+
+<!--<div class="galleryProject">-->
+<!--    <a href="assets/images/LCase4.png" target="blank">-->
+<!--        <img alt="LCase4 icon" id="LCase4Img" src="assets/images/LCase4.png">-->
+<!--    </a>-->
+<!--    <div class="desc2">Layouts Case4</div>-->
+<!--</div>-->
+
+
+<div class="galleryProject">
+    <a href="myProjects/css//Transition/Case1/CssTransitionCase_01.html" target="blank">
+        <img alt="TCase1 icon" id="TCase1Img" src="assets/images/TCase1.PNG">
+    </a>
+    <div class="desc2">Transition Case1</div>
+</div>
+
+<div class="galleryProject">
+    <a href="myProjects/css/Transition/Case2/CssTransitionCase_02.html" target="blank">
+        <img alt="TCase2 icon" id="TCase2Img" src="assets/images/TCase2.PNG">
+    </a>
+    <div class="desc2">Transition Case2</div>
+</div>
+
+<div class="galleryProject">
+    <a href="myProjects/css/Animation/Case1/AnimationCase_01.html" target="blank">
+        <img alt="ACase1 icon" id="ACase1Img" src="assets/images/ACase1.PNG">
+    </a>
+    <div class="desc2">Animation Case1</div>
+</div>
+
+<div class="galleryProject">
+    <a href="myProjects/css/Animation/Case2/AnimationCase_02.html" target="blank">
+        <img alt="ACase2 icon" id="ACase2Img" src="assets/images/ACase2.PNG">
+    </a>
+    <div class="desc2">Animation Case2</div>
+</div>
+
+<div class="galleryProject">
+    <a href="myProjects/css/Animation/Case3/CssAnimationCase_03.html" target="blank">
+        <img alt="ACase3 icon" id="ACase3Img" src="assets/images/ACase3.PNG">
+    </a>
+    <div class="desc2">Animation Case3</div>
+</div>
+
+<div class="galleryProject ACase4">
+    <a href="myProjects/css/Animation/Case4/CssAnimationCase_04.html" target="blank">
+        <img alt="ACase4 icon" id="ACase4Img" src="assets/images/ACase4.PNG">
+    </a>
+    <div class="desc2">Animation Case4</div>
+</div>
+
+<button class="projectMore button2" id="moreprojectbtn">See More</button>
+</section>
+
+<section id="educationSectionContainer">
+<div class="educationHeadline">Education</div>
+<div class="ijseDiv">
+    <img alt="ijse icon" class="ijseImg" src="assets/images/ijse.png">
+    <pre class="ijsePre">IJSE GDSE Programming 57 batch Undergraduate</pre>
+</div>
+<div class="schoolDiv">
+    <img alt="school icon" class="schoolImg" src="assets/images/school_image.png">
+    <pre class="schoolPre"> My primary and higher education in Mihindu Central College Agalawatta
+                2005-2018</pre>
+</div>
+</section>
+
+<section id="contactSectionContainer">
+<div class="ContactHeading">Contact</div>
+
+<div class="container">
+    <form action="">
+        <div class="row">
+            <div class="col-25">
+                <label for="name">Name</label>
+
+            </div>
+            <div class="col-75">
+                <input id="name" name="name" placeholder="Your Name ..." type="text">
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="subject">Subject</label>
+
+            </div>
+            <div class="col-75">
+                <input id="subject" placeholder="Your Subject..." type="text">
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="comment">Comment</label>
+
+            </div>
+            <div class="col-75">
+                <textarea id="comment" name="comment" placeholder="Write Something..."
+                          style="height: 200px;"></textarea>
+
+            </div>
+
+        </div>
+        <br>
+        <div class="row">
+            <input type="submit" value="Submit">
+
+        </div>
+    </form>
+</div>
+<div class="contactDetail">
+    <div class="phoneDiv">
+        <img alt="call image" class="callImg" src="assets/images/phone-call.png">
+        <p class="phone"> Call</p>
+        <a 0783688031 class="phoneNo" href="tell:+94783688031"><abbr title="Click to Call">0783688031</abbr></a>
+        <a 0765453914 class="phoneNo" href="tell:+94765453914"><abbr title="Click to Call">0765453914</abbr></a>
+
+    </div>
+
+</div>
+<div class="placeDetail">
+    <div class="placeDiv">
+        <img alt="place image" class="placeImg" src="assets/images/placeholder.png">
+        <p class="location" id="locationId"> LOCATION</p>
+        <p class="location" id="addressId">
+            Polwatta,
+            Kekulandala,
+            Agalawatta.
+        </p>
+    </div>
+
+</div>
+<div class="emaleDetail">
+    <div class="emailDiv">
+        <img alt="email image" class="emailsImg" src="assets/images/gmail.png">
+        <p class="email" id="emailId"> EMAIL</p>
+        <a class="emailAddress" href="mail:mihirangak1999@gmail.com" mihirangak1999@gmail.com><abbr
+                title="Click to send Mail">mihirangak1999@gmail.com</abbr></a>
+    </div>
+
+</div>
+</section>
+
+<footer class="footer">
+    <p class="footerP">
+        copyright &#169 all right recieved
+        Website powered by Kavindu Mihiranga
+    </p>
+</footer>
+<script>
+    document.getElementById("moreprojectbtn").onclick = function () {
+        location.href = "Project.html";
+    };
+
+    document.getElementById("skillMorebtn").onclick = function () {
+        location.href = "Skill.html";
+    };
+</script>
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script>
+
+    $("#home").click(function () {
+        $("#aboutSectionContainer").css("display", "block");
+        $("#skillSectionContainer").css("display", "block");
+        $("#projectSectionContainer").css("display", "block");
+        $("#educationSectionContainer").css("display", "block");
+        $("#contactSectionContainer").css("display", "block");
+
+        location.reload();
+    });
+
+    $("#about").click(function () {
+        $("#aboutSectionContainer").css("display", "block");
+        $("#skillSectionContainer").css("display", "none");
+        $("#projectSectionContainer").css("display", "none");
+        $("#educationSectionContainer").css("display", "none");
+        $("#contactSectionContainer").css("display", "none");
+            $('.footer').css({"top":"500px"});
+
+    });
+
+    $("#skill").click(function () {
+        $("#skillSectionContainer").css("display", "block");
+        $("#aboutSectionContainer").css("display", "none");
+        $("#projectSectionContainer").css("display", "none");
+        $("#educationSectionContainer").css("display", "none");
+        $("#contactSectionContainer").css("display", "none");
+
+        $('#skillHeading').css({"top":"5px"});
+        $('.gallery').css({"top":"80px"});
+        $('#skillMorebtn').css({"top":"120px"});
+        $('.footer').css({"top":"120px"});
+
+    });
+
+    $("#project").click(function () {
+        $("#projectSectionContainer").css("display", "block");
+        $("#aboutSectionContainer").css("display", "none");
+        $("#skillSectionContainer").css("display", "none");
+        $("#educationSectionContainer").css("display", "none");
+        $("#contactSectionContainer").css("display", "none");
+
+        $('.projectHeading').css({"top":"5px"});
+        $('.galleryProject').css({"top":"45px"});
+        $('#moreprojectbtn').css({"top":"50px"});
+        $('.footer').css({"top":"55px"});
+    });
+
+    $("#education").click(function () {
+        $("#educationSectionContainer").css("display", "block");
+        $("#aboutSectionContainer").css("display", "none");
+        $("#skillSectionContainer").css("display", "none");
+        $("#projectSectionContainer").css("display", "none");
+        $("#contactSectionContainer").css("display", "none");
+
+        $('.educationHeadline').css({"top":"5px"});
+        $('.ijseDiv').css({"top":"850px"});
+        $('.schoolDiv').css({"top":"950px"});
+        $('.footer').css({"top":"550px"});
+    });
+
+    $("#contact").click(function () {
+        $("#contactSectionContainer").css("display", "block");
+        $("#aboutSectionContainer").css("display", "none");
+        $("#skillSectionContainer").css("display", "none");
+        $("#educationSectionContainer").css("display", "none");
+        $("#projectSectionContainer").css("display", "none");
+
+        $('.ContactHeading').css({"top":"5px"});
+        $('.container').css({"top":"900px"});
+        $('.phoneDiv').css({"top":"-450px"});
+        $('.placeDiv').css({"top":"-450px"});
+        $('.emailDiv').css({"top":"20px"});
+        $('.footer').css({"top":"300px"});
+
+    });
+
+</script>
+</body>
+</html>

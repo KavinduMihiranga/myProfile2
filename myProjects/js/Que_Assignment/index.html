@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="assets/cssStyle/cssStyle.css" rel="stylesheet">
+    <title>Queue</title>
+</head>
+<body>
+<section id="divSection">
+    <div class="div" id="div1"></div>
+    <hr>
+    <section id="boxSection">
+        <div class="div" id="div2"></div>
+        <div class="div" id="div3"></div>
+        <div class="div" id="div4"></div>
+        <div class="div" id="div5"></div>
+
+    </section>
+
+    <hr>
+    <div class="div" id="div6"></div>
+
+</section>
+<button id="btnStart">Start</button>
+<button id="btnStop">Stop</button>
+
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<!--<script src="assets/jsScript/jsScript.js"></script>-->
+
+<script>
+    var div1=$('#div1');
+    var div2=$('#div2');
+    var div3=$('#div3');
+    var div4=$('#div4');
+    var div5=$('#div5');
+    var div6=$('#div6');
+    var start=$('#btnStart');
+    var stop=$('#btnStop');
+    var arr=[div1,div2,div3,div4,div5,div6];
+    var timerId;
+    start.click(function () {
+        clearInterval(timerId);
+        timerId=setInterval(setColors,900);
+
+        stop.click(function () {
+            clearInterval(timerId)
+        })
+    })
+
+    var i= 0;
+    function setColors() {
+        if (i==0){
+            arr[0].css("backgroundColor", "red");
+            arr[0].css("box-shadow", "2px 2px 70px 5px #ff0000");
+
+            arr[1].css("backgroundColor", "antiquewhite");
+            arr[1].css("box-shadow", "2px 2px 70px 5px #05c8e2");
+
+            arr[2].css("backgroundColor", "green");
+            arr[2].css("box-shadow", "2px 2px 70px 5px #07ff00");
+
+            arr[3].css("backgroundColor", "yellow");
+            arr[3].css("box-shadow", "2px 2px 70px 5px #eeff00");
+
+            arr[4].css("backgroundColor", "blue");
+            arr[4].css("box-shadow", "2px 2px 70px 5px #000cff");
+
+            arr[5].css("backgroundColor", "purple");
+            arr[5].css("box-shadow", "2px 2px 70px 5px #ff2792");
+
+            i++;
+            return;
+        }
+        else if (i==1){
+            arr[0].css("backgroundColor", "purple");
+            arr[0].css("box-shadow", "2px 2px 70px 5px #ff2792");
+
+            arr[1].css("backgroundColor", "red");
+            arr[1].css("box-shadow", "2px 2px 70px 5px #ff0000");
+
+            arr[2].css("backgroundColor", "antiquewhite");
+            arr[2].css("box-shadow", "2px 2px 70px 5px #05c8e2");
+
+            arr[3].css("backgroundColor", "green");
+            arr[3].css("box-shadow", "2px 2px 70px 5px #07ff00");
+
+            arr[4].css("backgroundColor", "yellow");
+            arr[4].css("box-shadow", "2px 2px 70px 5px #eeff00");
+
+            arr[5].css("backgroundColor", "blue");
+            arr[5].css("box-shadow", "2px 2px 70px 5px #000cff");
+
+            i++;
+            return;
+        }
+        else if(i==2){
+            arr[0].css("backgroundColor", "blue");
+            arr[0].css("box-shadow", "2px 2px 70px 5px #000cff");
+
+            arr[1].css("backgroundColor", "purple");
+            arr[1].css("box-shadow", "2px 2px 70px 5px #ff2792");
+
+            arr[2].css("backgroundColor", "red");
+            arr[2].css("box-shadow", "2px 2px 70px 5px #ff0000");
+
+            arr[3].css("backgroundColor", "antiquewhite");
+            arr[3].css("box-shadow", "2px 2px 70px 5px #05c8e2");
+
+            arr[4].css("backgroundColor", "green");
+            arr[4].css("box-shadow", "2px 2px 70px 5px #07ff00");
+
+            arr[5].css("backgroundColor", "yellow");
+            arr[5].css("box-shadow", "2px 2px 70px 5px #eeff00");
+
+            i++;
+            return;
+        }
+        else if (i==3){
+            arr[0].css("backgroundColor", "yellow");
+            arr[0].css("box-shadow", "2px 2px 70px 5px #eeff00");
+
+            arr[1].css("backgroundColor", "blue");
+            arr[1].css("box-shadow", "2px 2px 70px 5px #000cff");
+
+            arr[2].css("backgroundColor", "purple");
+            arr[2].css("box-shadow", "2px 2px 70px 5px #ff2792");
+
+            arr[3].css("backgroundColor", "red");
+            arr[3].css("box-shadow", "2px 2px 70px 5px #ff0000");
+
+            arr[4].css("backgroundColor", "antiquewhite");
+            arr[4].css("box-shadow", "2px 2px 70px 5px #05c8e2");
+
+            arr[5].css("backgroundColor", "green");
+            arr[5].css("box-shadow", "2px 2px 70px 5px #07ff00");
+
+            i++;
+            return;
+        }
+        else if (i==4){
+            arr[0].css("backgroundColor", "green");
+            arr[0].css("box-shadow", "2px 2px 70px 5px #07ff00");
+
+            arr[1].css("backgroundColor", "yellow");
+            arr[1].css("box-shadow", "2px 2px 70px 5px #eeff00");
+
+            arr[2].css("backgroundColor", "blue");
+            arr[2].css("box-shadow", "2px 2px 70px 5px #000cff");
+
+            arr[3].css("backgroundColor", "purple");
+            arr[3].css("box-shadow", "2px 2px 70px 5px #ff2792");
+
+            arr[4].css("backgroundColor", "red");
+            arr[4].css("box-shadow", "2px 2px 70px 5px #ff0000");
+
+            arr[5].css("backgroundColor", "antiquewhite");
+            arr[5].css("box-shadow", "2px 2px 70px 5px #05c8e2");
+
+            i++;
+            return;
+        }
+        else if (i==5){
+            arr[0].css("backgroundColor", "antiquewhite");
+            arr[0].css("box-shadow", "2px 2px 70px 5px #05c8e2");
+
+            arr[1].css("backgroundColor", "green");
+            arr[1].css("box-shadow", "2px 2px 70px 5px #07ff00");
+
+            arr[2].css("backgroundColor", "yellow");
+            arr[2].css("box-shadow", "2px 2px 70px 5px #eeff00");
+
+            arr[3].css("backgroundColor", "blue");
+            arr[3].css("box-shadow", "2px 2px 70px 5px #000cff");
+
+            arr[4].css("backgroundColor", "purple");
+            arr[4].css("box-shadow", "2px 2px 70px 5px #ff2792");
+
+            arr[5].css("backgroundColor", "red");
+            arr[5].css("box-shadow", "2px 2px 70px 5px #ff0000");
+
+            i = 0;
+            return;
+        }
+    }
+
+//     $(document).ready(function () {
+//         $("#btnStart").click(function() {
+//             setTimeout(iterate,100)
+//
+//         })
+//
+//     })
+// function iterate() {
+//     var divx=$('#div1');
+//     if (divx.backgroundColor = "purple") {
+//
+//         $("#div1").css({'backgroundColor': 'blue'});
+//         $("#div2").css({'backgroundColor': 'purple'});
+//         $("#div3").css({'backgroundColor': 'antiquewhite'});
+//         $("#div4").css({'backgroundColor': 'green'});
+//         $("#div5").css({'backgroundColor': 'yellow'});
+//         $("#div6").css({'backgroundColor': 'red'});
+//
+//     }
+//     if (divx.backgroundColor = "blue") {
+//         $("#div1").css({'backgroundColor': 'purple'});
+//         $("#div2").css({'backgroundColor': 'antiquewhite'});
+//         $("#div3").css({'backgroundColor': 'green'});
+//         $("#div4").css({'backgroundColor': 'yellow'});
+//         $("#div5").css({'backgroundColor': 'red'});
+//         $("#div6").css({'backgroundColor': 'blue'});
+//     }
+//     if (divx.backgroundColor = "antiquewhite") {
+//         $("#div1").css({'backgroundColor': 'green'});
+//         $("#div2").css({'backgroundColor': 'yellow'});
+//         $("#div3").css({'backgroundColor': 'red'});
+//         $("#div4").css({'backgroundColor': 'blue'});
+//         $("#div5").css({'backgroundColor': 'purple'});
+//         $("#div6").css({'backgroundColor': 'antiquewhite'});
+//     }
+//
+// }
+
+    // var box1 = $("#div1").css({'backgroundColor': 'blue'});
+    // var box2 = $("#div2").css({'backgroundColor': 'purple'});
+    // var box3 = $("#div3").css({'backgroundColor': 'antiquewhite'});
+    // var box4 = $("#div4").css({'backgroundColor': 'green'});
+    // var box5 = $("#div5").css({'backgroundColor': 'yellow'});
+    // var box6 = $("#div6").css({'backgroundColor': 'red'});
+    //
+    // $("#btnStart").click(function () {
+    //
+    // });
+    //
+    // function Queue() {
+    //     const box = [box1,box2,box3,box4,box5,box6];
+    // }
+
+</script>
+</body>
+</html>
